@@ -1,0 +1,25 @@
+.login_menu {
+  display: flex;
+  list-style: none;
+}
+.login_menu li {
+  margin-left: 1rem;
+}
+.login_menu a {
+  text-decoration: none;
+}
+.login_menu h4 {
+  margin-top: 0;
+}
+.heading {
+  text-align: center;
+  color: burlywood;
+  margin-top: 2rem;
+}
+.user_list {
+  display: flex;
+  flex-direction: column;
+}
+.user_list a {
+  text-decoration: none;
+}
