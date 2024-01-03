@@ -22,6 +22,7 @@ export default function Home() {
       {InnerComponent()}
       <Link href="/login">Go to login</Link>
       <Link href="/about">Go to about</Link>
+      <Link href={"/login/productlist"}>Product List</Link>
       <button onClick={() => navigation("about")}></button>
       <button onClick={() => navigation("login")}></button>
     </main>
