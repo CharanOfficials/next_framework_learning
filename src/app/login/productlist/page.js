@@ -1,4 +1,10 @@
 "use client";
+import { Roboto } from "next/font/google";
+const roboto = Roboto({
+  weight: "100",
+  subsets: ["latin"],
+  display: "swap",
+});
 import { useState, useEffect } from "react";
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -7,12 +13,12 @@ const ProductList = () => {
       let data = await fetch("https://dummyjson.com/products");
       data = await data.json();
       setProducts(data.products);
-      console.log(data);
     };
     fetchData();
   }, []);
   return (
     <div>
+      <div className={roboto.className}>Roboto</div>
       {products.map((product) => (
         <h1 key={product.id}>{product.title}</h1>
       ))}

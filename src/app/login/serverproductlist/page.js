@@ -1,4 +1,3 @@
-import React from "react";
 import Product from "./product";
 const product = async () => {
   let data = await fetch("https://dummyjson.com/products");
@@ -7,7 +6,6 @@ const product = async () => {
 };
 const ServerProductList = async () => {
   const products = await product();
-  // console.log(products);
   return (
     <div>
       {products.map((item) => (
